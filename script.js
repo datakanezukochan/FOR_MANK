@@ -85,16 +85,13 @@ function startTypingEffect() {
     
     Cuối cùng cũng lại đến ngày này Mank nhỉ. Ngày cậu mong chờ nhất trong các dịp mỗi năm. Tớ biết rằng năm nay cậu có thể cảm thấy
     lẻ loi vì kh còn được ăn sn cùng mng như trước nữa :<. Nhưng mà cậu hãy luôn nhớ sẽ luôn có rất nhiều người vẫn nhớ và trân trọng
-    cậu những dịp này mà (có cả tớ nữa <333)...
-
-    Vì thế nên, đừng bùn cậu nhee :<!! 
+    cậu những dịp này mà (có cả tớ nữa <333)...    Vì thế nên, đừng bùn cậu nhee :<!! 
 
     Chúc ngàn lời tốt đẹp nhất đến với Mank trong năm nay, gặp nhiều may mắn, học tập được 3.7 GPA++, luôn mãi tươi cười nheee!
     Mãi iu Mank, về Vn tớ chở menk đi chơi hết cái sgon lunn!!!!
 
     To the moon,
-    Tdee
-    (intern Micecroshock)`;
+    Tdee (intern Micecroshock)`;
 
     const typingEffectContainer = document.getElementById('typing-effect');
     let index = 0;
