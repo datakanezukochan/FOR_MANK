@@ -1,0 +1,108 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <div id="melody-confetti-container"></div>
+    
+    <audio class="song" loop autoplay>
+        <source src="bai.mp3">
+        </source>
+        Your browser isn't invited for super fun audio time.
+    </audio>
+
+    <!-- Page 1: secret -->
+    <div id="page1" class="page active">
+        <h1>Cậu ơi... cho cậu xem cái này nek:</h1>
+        <p>Nhập mk để xem: cu t dài bao nh cm???</p>
+        <input id="password" type="text" placeholder="? cm" />
+        <button onclick="checkPassword()">Mở khóa</button>
+        <p id="error-message" class="error-message"></p>
+
+    </div>
+    <!-- Page 2: Showcase -->
+    <div id="page2" class="page">
+        <h1>OUR's</h1>
+        <div class="gallery">
+            <div class="card" onclick="flipCard(this)" data-month="January">
+                <div class="front">January</div>
+                <div class="back"><img src="images/january.jpg" alt="January"></div>
+            </div>
+            <div class="card" onclick="flipCard(this)" data-month="February">
+                <div class="front">February</div>
+                <div class="back"><img src="images/february.jpeg" alt="February"></div>
+            </div>
+            <div class="card" onclick="flipCard(this)" data-month="March">
+                <div class="front">March</div>
+                <div class="back"><img src="images/march.jpeg" alt="March"></div>
+            </div>
+            <div class="card" onclick="flipCard(this)" data-month="April">
+                <div class="front">April</div>
+                <div class="back"><img src="images/april.jpeg" alt="April"></div>
+            </div>
+            <div class="card" onclick="flipCard(this)" data-month="May">
+                <div class="front">May</div>
+                <div class="back"><img src="images/may.jpeg" alt="May"></div>
+            </div>
+            <div class="card" onclick="flipCard(this)" data-month="June">
+                <div class="front">June</div>
+                <div class="back"><img src="images/june.jpeg" alt="June"></div>
+            </div>
+            <div class="card" onclick="flipCard(this)" data-month="July">
+                <div class="front">July</div>
+                <div class="back"><img src="images/july.jpeg" alt="July"></div>
+            </div>
+            <div class="card" onclick="flipCard(this)" data-month="August">
+                <div class="front">August</div>
+                <div class="back"><img src="images/august.jpeg" alt="August"></div>
+            </div>
+            <div class="card" onclick="flipCard(this)" data-month="September">
+                <div class="front">September</div>
+                <div class="back"><img src="images/september.jpeg" alt="September"></div>
+            </div>
+            <div class="card" onclick="flipCard(this)" data-month="October">
+                <div class="front">October</div>
+                <div class="back"><img src="images/october.jpeg" alt="October"></div>
+            </div>
+            <div class="card" onclick="flipCard(this)" data-month="November">
+                <div class="front">November</div>
+                <div class="back"><img src="images/november.jpeg" alt="November"></div>
+            </div>
+            <div class="card" onclick="flipCard(this)" data-month="December">
+                <div class="front">December</div>
+                <div class="back"><img src="images/december.jpeg" alt="December"></div>
+            </div>
+        </div>
+        <button onclick="goToPage(3)">Đi típ</button>
+       
+    </div>
+    <!-- Page 3: Wishes -->
+    <div id="page3" class="page">
+        <div class="letter-container">
+            <div id="typing-effect" class="typing-effect"></div>
+        </div>
+        <button onclick="goToPage(4)">Đi típ :></button>
+    </div>
+    <!-- Page 4: video -->
+    <div id="page4" class="page">
+        <h1>Happy Birthday, Menkuubuububububu!</h1>
+        <p>Tuổi 19 rồi, hãy cháy hết mình với nó nhé!</p>
+        <button onclick="showVideo()">Click here....</button>
+        <div id="video-popup" class="popup">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closeVideo()">&times;</span>
+                <video id="birthday-video" controls>
+                    <source src="birthday.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
